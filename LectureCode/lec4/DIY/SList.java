@@ -5,7 +5,6 @@ public class SList {
 	public class IntNode {
 		public int item;     /* Equivalent of first */
 		public IntNode next; /* Equivalent of rest */
-
 		public IntNode(int i, IntNode h) {
 			item = i;
 			next = h;		
