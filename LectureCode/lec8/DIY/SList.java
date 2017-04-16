@@ -28,6 +28,7 @@ public class SList<Blorp>{
 	}
 
 	/** Adds an item of the front. */
+	@Override
 	public void insertFront(Blorp x) {
 		Node oldFrontNode = sentinel.next;
 		Node newNode = new Node(x, oldFrontNode);
@@ -36,11 +37,13 @@ public class SList<Blorp>{
 	}
 
 	/** Gets the front item of the list. */
+	@Override
 	public Blorp getFront() {
 		return sentinel.next.item;
 	}
 
 	/** Puts an item at the back of the list. */
+	@Override
 	public void insertBack(Blorp x) {
 		size += 1;
 
@@ -55,6 +58,7 @@ public class SList<Blorp>{
 	}
 
 	/** Returns the back node of our list. */
+	@Override
 	private Node getBackNode() {
 		Node p = sentinel;
 
@@ -66,12 +70,14 @@ public class SList<Blorp>{
 	}
 
 	/** Returns last item */
+	@Override
 	public Blorp getBack() {
 		Node back = getBackNode();
 		return back.item;
 	}
 
 	/** Deletes and returns last item. */
+	@Override
 	public Blorp deleteBack() {
 		Node back = getBackNode();
 		if (back == sentinel) {
@@ -87,11 +93,13 @@ public class SList<Blorp>{
 		return back.item;
 	}
 
+	@Override
 	public int size() {
 		return size;
 	}
 
 	/** Gets the positionth item of the list. */
+	@Override
 	public Blorp get(int position) {
 		if (position == 0) {
 			return getFront();
@@ -107,6 +115,7 @@ public class SList<Blorp>{
 
     /** Inserts item into given position.
       * Code from discussion #3 */
+    @Override
 	public void insert(Blorp item, int position) {
 		if (sentinel.next == null || position == 0) {
 			insertFront(item);
