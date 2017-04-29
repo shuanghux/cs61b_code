@@ -1,7 +1,7 @@
 /** 
- *  @author Josh Hug
+ *  @author Shuang Hu
  */
-
+package hu.animals;
 public class Dog {
     private String name;
     private String breed;
@@ -15,5 +15,9 @@ public class Dog {
 
     public String toString() {
         return name + " is a " + breed + " weighing " + size + " lbs.";
+    }
+
+    public void show() {
+        System.out.println(this.toString());
     }
 } 

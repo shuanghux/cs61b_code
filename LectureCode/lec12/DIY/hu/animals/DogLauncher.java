@@ -1,5 +1,6 @@
-/** 
- *  @author Josh Hug
+package hu.animals;
+/**
+ *  @author Shuang Hu
  */
 
 public class DogLauncher {
