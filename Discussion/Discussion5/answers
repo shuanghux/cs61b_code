@@ -1,0 +1,46 @@
+# Discussion 5 Answers: Selecting ADTs
+Author Shuang Hu
+
+ADTs: Maps, sets, lists, stacks, queues, priorityqueue, 
+1. Null
+
+2. Given a news article, find the frequency of each word used in the article:
+   Using MAP: For each time a new key (word) is added, value (+1).
+
+   Given an unsorted array of integers, return the array sorted from least to greatest:
+   Pirorityqueue: when adding elemetns, using their values as index so that they are sorted. Then put them in an array.
+
+   Implement the forward and back buttons for a web browser:
+   Stack: The first page address would the first in. Two stacks are used{
+   stack1: Add an object when a new page is visited. And pop() when click "back"
+   stack2: Add an object when click "back", pop() when click forward.
+   }
+
+ 3. 1. Suppose we want an ADT called BiDividerMap with the following functionality (assume
+	K is something Comparable):
+	put(K, V); // put a key, value pair
+	getByKey(K); // get the value corresponding to a key
+	getByValue(V); // get the key corresponding to a value
+	numLessThan(K); // return number of keys in the map less than K
+	Describe how you could implement this ADT building off the ADTs given on the first page.
+	Do not write code. Then, suppose you decide you want numLessThan(K) to run really
+	fast. Can you think of any ways to improve your implementation to account for this?
+
+	ans: two maps, (K to V and V to K). for numLessThan(K), get key lists, sort, count until largest k1 no larger than K.
+
+	2. Next, Suppose we would like to invent a new ADT called MedianFinder which supports
+	the following operations:
+
+		add(int x); // add the integer into the collection
+		getMedian(); // returns the median integer in the collection
+
+	ans: List, sort, get median.
+
+
+4. ADTing in Circles
+	You want to solve a problem using a queue, but unfortunately, you only have access to a class that is a stack. You decide to implement the queue ADT just using stacks. Complete the following class, assuming that you have access to a class called Stack which implements the stack ADT. Hint: Consider using two stacks.
+
+	Squeue.java
+
+
+
