@@ -1,0 +1,6 @@
+# Discussion 6 Answers: Immutability, Encapsulation Practices
+Author Shuang Hu
+
+1. xxxx
+
+2. see 
